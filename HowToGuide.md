@@ -57,3 +57,14 @@
    ```
 
 4. If you want to make your own requests please refer to `test.js` file under desired consistency folder. The SET/GET requests will be either supporting a socket event or a REST API call.
+
+**NOTE:** The application will initially try to connect to redis kv stores, they may initially throw an error connecting but they will get connected after several retries, please wait until then. This is because the redis is on cloud and due the free version sometimes the server goes idle and may take time to start.
+
+For example:
+
+<img src="./images/start-3.png" width=400 height=370/>
+<img src="./images/start-1.png" width=400 height=330/>
+
+They may not throw error as well:
+
+<img src="./images/start-2.png" width=400 height=170/>
