@@ -1,0 +1,27 @@
+{
+  "name": "assignment04-distributed-kv-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seq": "node index.js seq",
+    "lin": "node index.js lin",
+    "eve": "node index.js eve",
+    "seq-test": "node ./sequential/test.js",
+    "lin-test": "node ./linearizable/test.js",
+    "eve-test": "node ./eventual/test.js",
+    "tom-server": "node tomServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anurag Nampally",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "redis": "^4.6.13",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  }
+}
