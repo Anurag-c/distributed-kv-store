@@ -1,6 +1,6 @@
 ## Implementation
 
-<img src="./images/design-1.png"/>
+<img src="./images/flow.png"/>
 
 1. Request from any client first reaches application load balancer which works on round robin principle which rotates connection requests among web servers in the order that requests are received.
 2. Each application/replica is connected to its own redis key-value store and can handle SET / GET requests forwarded by the load balancer.
